@@ -1,0 +1,10 @@
+version: '3'
+services:
+  module_test:
+    restart: always
+    build: .
+    container_name: 'module_test'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
